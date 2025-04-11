@@ -1,7 +1,3 @@
-Super Helmi 🙌 ! Voici un **README.md complet et unique** qui décrit tout ton projet **YallaBook** (frontend + backend) avec toutes les instructions nécessaires pour l’exécuter, plus les crédits, captures, structure, etc.
-
----
-
 ```markdown
 # 🏨 YallaBook – Application de Réservation d’Hôtels
 
