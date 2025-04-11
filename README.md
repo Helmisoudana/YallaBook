@@ -183,9 +183,4 @@ Ce projet est sous licence **MIT** – vous pouvez l'utiliser, le modifier et le
 
 ---
 
-> ⭐ Si ce projet vous a aidé ou vous plaît, pensez à laisser une étoile sur le repo GitHub !
-```
 
----
-
-Tu veux que je t’aide à **générer une bannière GitHub style pro** pour mettre tout en haut du README avec des icônes sympas et un fond personnalisé ? 👨‍🎨
