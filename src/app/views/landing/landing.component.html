@@ -1,0 +1,276 @@
+<app-index-navbar></app-index-navbar>
+
+<main>
+  <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+    <div class="absolute top-0 w-full h-full bg-center bg-cover" style="background-image: url('assets/img/background.webp');">
+      <span id="blackOverlay" class="w-full h-full absolute opacity-20 bg-black"></span>
+    </div>
+    <div class="container relative mx-auto">
+      <div class="items-center flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <div class="pr-12">
+            <h1 class="text-white font-bold text-5xl ">
+              Welcome to Yalla Book
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+      style="transform: translateZ(0)">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </div>
+
+  <section class="pb-20 bg-blueGray-200 -mt-24">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap">
+        <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 sahdow rounded-lg hover:shadow-lg">
+            <div class="px-4 py-5 flex-auto">
+              <div
+                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 sahdow rounded-full bg-red-400">
+                <i class="fas fa-plane"></i>
+              </div>
+              <h6 class="text-2xl font-bold">Vols & Billets d'Avion</h6>
+              <img src="assets/img/3.jpg" class="rounded-lg shadow-lg object-cover h-48 w-full  mt-4">
+              <img class="mt-2 mb-4 text-blueGray-500">
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full md:w-4/12 px-4 text-center">
+          <div routerLink="/hotels" class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 sahdow hover:shadow-lg cursor-pointer rounded-lg">
+            <div class="px-4 py-5 flex-auto">
+              <div
+                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 sahdow rounded-full bg-lightBlue-400">
+                <i class="fas fa-hotel"></i>
+              </div>
+              <h6 class="text-2xl font-bold ">Hôtels & Séjours</h6>
+              <img src="assets/img/1.jpg" class="rounded-lg shadow-lg object-cover h-48 w-full  mt-4">
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 sahdow rounded-lg hover:shadow-lg">
+            <div class="px-4 py-5 flex-auto">
+              <div
+                class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 sahdow rounded-full bg-emerald-400">
+                <i class="fas fa-mug-hot"></i>
+              </div>
+              <h6 class="text-2xl font-bold">Restaurants & Repas</h6>
+              <img src="assets/img/2.png" class="rounded-lg shadow-lg object-cover h-48 w-full  mt-4">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="relative max-w-full  overflow-hidden mt-20">
+        <div class="flex transition-transform duration-500" [ngStyle]="{'transform': 'translateX(' + (-currentSlideIndex * 100) + '%)'}">
+          <div *ngFor="let slide of slides" class="w-full flex-shrink-0">
+            <img [src]="slide" class="w-full h-64 object-cover" />
+          </div>
+        </div>
+      
+        <!-- Buttons -->
+        <button (click)="prevSlide()" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-70">
+          &#10094;
+        </button>
+      
+        <button (click)="nextSlide()" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-70">
+          &#10095;
+        </button>
+      </div>
+      <div class="container mt-10 ">
+        <div class="flex flex-wrap justify-center text-center mb-10">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-bold">Réservez votre séjour idéal dès maintenant</h2>
+            <p class="text-lg leading-relaxed m-4 text-blueGray-500">
+              Découvrez une large sélection de vols, hôtels et restaurants adaptés à vos besoins. Que vous partiez en vacances en famille, en escapade romantique ou en voyage d'affaires,
+              nous avons tout ce qu'il vous faut. Profitez des meilleurs prix, de services de qualité et d’une expérience de réservation fluide, à portée de main.
+            </p>
+          </div>
+        </div>
+  
+      </div>
+      
+      
+      
+  
+
+    </div>
+  </section>
+
+  <section class=" p-5 my-10 -mt-20">
+ <!-- Nouvelle section "Pourquoi choisir YallaBook" -->
+ <div class="flex flex-wrap items-center mt-32">
+  <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+    <div class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 sahdow rounded-full bg-white">
+      <i class="fas fa-user-friends text-xl"></i>
+    </div>
+    <h3 class="text-3xl mb-8 font-semibold leading-normal">
+      Pourquoi choisir YallaBook ?
+    </h3>
+    <!-- Section des cartes "Les Bonnes Raisons" -->
+    <div class="cards-container">
+      <div class="card">
+        <i class="fas fa-tag"></i>
+        <h3>Meilleur Prix Garanti</h3>
+        <p>Nous vous offrons les meilleurs prix pour vos réservations.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-headset"></i>
+        <h3>Service Clients</h3>
+        <p>Notre équipe est à votre écoute pour toute assistance.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Paiement Sécurisé</h3>
+        <p>Vos transactions sont protégées et sécurisées.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-hotel"></i>
+        <h3>Hôtel, Voyage, Billet d'avion...</h3>
+        <p>Nous couvrons tous vos besoins de voyage.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-clock"></i>
+        <h3>À votre écoute 7/7</h3>
+        <p>Disponible toute la semaine pour vous servir.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-check-circle"></i>
+        <h3>Réservations Faciles et 100% Sécurisées</h3>
+        <p>Un processus de réservation simple et sûr.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <section class="pb-20 relative block bg-blueGray-800">
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+      style="transform: translateZ(0)">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-blueGray-800 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+
+    <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+
+    </div>
+  </section>
+  <section class="relative block py-24 lg:pt-0 bg-blueGray-800">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="relative flex flex-col min-w-0 break-words w-full mb-6 sahdow rounded-lg bg-blueGray-200">
+            <div class="flex-auto p-5 lg:p-10">
+              <h4 class="text-2xl font-semibold">Réservez en un clic, vivez l'instant !</h4>
+              <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
+                Complétez ce formulaire, et nous confirmerons votre réservation sous 24 heures.
+              </p>
+              <div class="relative w-full mb-3 mt-8">
+                <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="full-name">
+                  Nom Complet
+                </label>
+                <input type="text"
+                  class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                  placeholder="Full Name" />
+              </div>
+
+              <div class="relative w-full mb-3">
+                <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="email">
+                  Email
+                </label>
+                <input type="email"
+                  class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                  placeholder="Email" />
+              </div>
+
+              <div class="relative w-full mb-3">
+                <label class="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="message">
+                  Message
+                </label>
+                <textarea rows="4" cols="80"
+                  class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Type a message..."></textarea>
+              </div>
+              <div class="text-center mt-6">
+                <button
+                  class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:sahdow outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button">
+                  Envoyer le Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
+
+<!-- CSS spécifique à la partie ajoutée -->
+<style>
+  /* Styles pour le conteneur des cartes */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
+    gap: 15px; /* Espace entre les cartes */
+  }
+
+  /* Styles pour chaque carte */
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Padding réduit */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Largeur automatique pour s'adapter à la grille */
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .card i {
+    font-size: 30px; /* Taille des icônes réduite */
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+
+  .card h3 {
+    font-size: 18px; /* Taille de police réduite */
+    margin-bottom: 8px;
+    color: #007BFF;
+  }
+
+  .card p {
+    font-size: 12px; /* Taille de police réduite */
+    color: #666;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 cartes par ligne sur les écrans mobiles */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cards-container {
+      grid-template-columns: 1fr; /* 1 carte par ligne sur les très petits écrans */
+    }
+  }
+</style>

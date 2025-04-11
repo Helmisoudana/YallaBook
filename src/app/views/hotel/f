@@ -1,0 +1,67 @@
+<!--<app-index-navbar></app-index-navbar>
+<main class="h-full relative">
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+        <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+            background-image: url('https://i.pinimg.com/736x/5e/d6/43/5ed6434f28bb6982f79da401426616cb.jpg');
+          ">
+            <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+            <div class="items-center flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                    <div class="pr-12">
+                        <h1 class="text-white font-semibold text-5xl">
+                            Welcome to Yalla Book
+                        </h1>
+                        <p class="mt-4 text-lg text-blueGray-200">
+                            Your gateway to seamless hotel and restaurant reservations. Whether you're traveling for
+                            business,
+                            planning a family getaway, or seeking a fine dining experience, we've got you covered.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+            style="transform: translateZ(0)">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </div>
+    <div class="p-5 bg-blueGray-200" style="padding: 50px;">
+        <div class="grid grid-cols-2">
+            <div class="overflow-hidden rounded-md">
+                <img src="https://img.nh-hotels.net/4pLV4/a1bGbw/original/Anantara_Grand_Hotel_Krasnapolsky_Amsterdam_Exterior_Building+Evening_Facade.jpg?output-quality=70&resize=550:*&composite-to=center,center|550:278&background-color=white"
+                    class="w-full" alt="">
+            </div>
+
+            <div class="flex flex-col gap-2 p-2 px-5">
+                <p class="text-xl text-blue-600 flex flex-row items-center gap-3 font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                    </svg>
+                    <span>Tunisia, Sousse 4005</span>
+                </p>
+                <p class="text-2xl font-semibold">Lorem ipsum, dolor sit amet consectetur</p>
+                <p class="text-lg max-w-[600px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam
+                    dignissimos nisi! Doloribus aliquam
+                    adipisci odio inventore est repellendus vero maxime quibusdam ab ducimus autem voluptate, officia
+                    fugiat! Cupiditate, temporibus!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur praesentium voluptate culpa
+                    fugiat ullam sed. Rem neque cumque, culpa placeat quia consectetur nulla laborum. Ab officia sunt
+                    assumenda sed placeat.</p>
+                <div class="flex flex-row justify-end max-w-[600px]">
+
+                    <button class="bg-gray-500 text-white px-4 py-2 rounded-md" routerLink="/auth/login">Reserevation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>-->
